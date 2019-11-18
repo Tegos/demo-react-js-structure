@@ -1,9 +1,15 @@
 import React from 'react';
+import {Switch, Route} from 'react-router-dom';
+import Home from '../../pages/Home/Home';
+import UserPage from '../../pages/UserPage/UserPage';
 
 function Main() {
     return (
         <main>
-            <h2>This is th Main Component</h2>
+            <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route path="/user/:id" component={UserPage}/>
+            </Switch>
         </main>
     );
 }
