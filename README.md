@@ -1,3 +1,10 @@
+<a href="https://tegos-demo-react-js-structure.netlify.com/">
+  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"/>
+</a>
+
+# React Demo Structure
+Base structure for react-js application
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
