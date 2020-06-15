@@ -1,5 +1,6 @@
 import React from 'react';
 import UserService from "../../services/UserService/UserService";
+import PropTypes from 'prop-types';
 
 class UserPage extends React.Component {
     constructor(props) {
@@ -43,6 +44,14 @@ class UserPage extends React.Component {
             </div>
         );
     }
+}
+
+UserPage.propTypes = {
+    match: PropTypes.shape({
+        params: PropTypes.shape({
+            id: PropTypes.number.isRequired
+        })
+    })
 }
 
 export default UserPage;
